@@ -627,28 +627,39 @@
 
                             <ul class="grid mt-4 mb-10 text-sm lg:mt-6 md:grid-cols-2 gap-x-8 gap-y-3 *:flex *:items-center">
                                 <li>
-                                    <span class="flex-[0_0_6rem]">LinkedIn</span>
-                                    <span class="flex-[0_0_2rem]">:</span>
-                                    <a href="https://linkedin.com/in/victor-mwenda" target="_blank" rel="noopener noreferrer" class="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">linkedin.com/in/victor-mwenda</a>
+                                    <div class="flex items-center gap-3 py-2 border-b border-platinum dark:border-greyBlack200">
+                                        <span class="flex-[0_0_6rem]">LinkedIn</span>
+                                        <span class="text-black/40 dark:text-white/40">:</span>
+                                        <a href="https://linkedin.com/in/victor-mwenda" target="_blank" rel="noopener noreferrer" 
+                                           class="flex items-center gap-2 text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 group">
+                                            <i class="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
+                                            <span class="hover:underline">linkedin.com/in/victor-mwenda</span>
+                                        </a>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span class="flex-[0_0_6rem]">Email</span>
-                                    <span class="flex-[0_0_2rem]">:</span>
-                                    <span class="text-black dark:text-white">kiambi15@gmail.com</span>
+                                    <div class="flex items-center gap-3 py-2 border-b border-platinum dark:border-greyBlack200">
+                                        <span class="flex-[0_0_6rem]">Email</span>
+                                        <span class="text-black/40 dark:text-white/40">:</span>
+                                        <span class="text-black dark:text-white">kiambi15@gmail.com</span>
+                                    </div>
                                 </li>
 
-                                <li class="flex items-center">
+                                <li class="flex items-center gap-3 py-2 border-b border-platinum dark:border-greyBlack200">
                                     <span class="flex-[0_0_6rem]">Github</span>
-                                    <span class="flex-[0_0_2rem]">:</span>
+                                    <span class="text-black/40 dark:text-white/40">:</span>
                                     <a href="https://github.com/victorkiambi" target="_blank" rel="noopener noreferrer"
-                                       class="hover:underline hover:text-blue-500 text-black dark:text-white">
-                                        github.com/victorkiambi
+                                       class="flex items-center gap-2 text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-300 group">
+                                        <i class="fab fa-github text-xl group-hover:scale-110 transition-transform"></i>
+                                        <span class="hover:underline">github.com/victorkiambi</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <span class="flex-[0_0_6rem]">Language</span>
-                                    <span class="flex-[0_0_2rem]">:</span>
-                                    <span class="text-black dark:text-white">English, Swahili</span>
+                                    <div class="flex items-center gap-3 py-2 border-b border-platinum dark:border-greyBlack200">
+                                        <span class="flex-[0_0_6rem]">Language</span>
+                                        <span class="text-black/40 dark:text-white/40">:</span>
+                                        <span class="text-black dark:text-white">English, Swahili</span>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -1190,150 +1201,132 @@
                 <!-- Portfolio Section Start -->
                 <div data-scroll-index="5" id="portfolio">
 
-<!--                    <div class="portfolio-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">-->
-<!--                        <div-->
-<!--                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">-->
-<!--                            <i class="fal fa-tasks-alt text-theme"></i>-->
-<!--                            PORTFOLIO-->
-<!--                        </div>-->
-<!--                        <div class="mt-5 mb-8 md:my-10 section-title">-->
-<!--                            <h2-->
-<!--                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">-->
-<!--                                Featured <span class="font-semibold text-theme">Projects</span>-->
-<!--                            </h2>-->
-<!--                            <p class="max-w-xl mt-4 md:mt-6 subtitle">-->
-<!--&lt;!&ndash;                                I design products that are more than pretty. I make them shippable and usable, ttempor&ndash;&gt;-->
-<!--&lt;!&ndash;                                non mollit dolor et do aute&ndash;&gt;-->
-<!--                            </p>-->
-<!--                        </div>&lt;!&ndash;./section-title&ndash;&gt;-->
+                    <div class="portfolio-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-tasks-alt text-theme"></i>
+                            PORTFOLIO
+                        </div>
+                        <div class="mt-5 mb-8 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                Featured <span class="font-semibold">Projects</span>
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- AfriScout Card -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                                <div class="h-56 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                                    <img src="assets/img/AfirScout.jpeg" 
+                                         alt="AfriScout App" 
+                                         class="max-h-full w-auto p-4">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-black dark:text-white mb-2">AfriScout</h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        A mobile application that displays current water and vegetation conditions on localized grazing maps, enabling pastoralists to make accurate migration decisions and improve pasture management.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">Android</span>
+                                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-sm">GIS</span>
+                                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full text-sm">Maps</span>
+                                    </div>
+                                    <a href="https://play.google.com/store/apps/details?id=com.pci_afriscout&hl=en" 
+                                       target="_blank"
+                                       class="inline-flex items-center text-theme hover:text-theme-dark">
+                                        <i class="fab fa-google-play mr-2"></i>
+                                        View on Play Store
+                                    </a>
+                                </div>
+                            </div>
 
-<!--                        <div class="portfolio_wrapper grid sm:grid-cols-2 gap-4 lg:gap-7.5 *:relative *:z-1">-->
-<!--                            <div class="item md:col-span-2 group">-->
-<!--                                <a href="project-single.html"-->
-<!--                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">-->
-<!--                                    <div class="relative w-[810px] h-[374px] group">-->
-<!--                                        <div class="img-wrapper w-full h-full">-->
-<!--                                            <img src="assets/img/portfolio/afriscout.png"-->
-<!--                                                 class="rounded-lg w-full h-full object-cover object-center transition-all duration-300 group-hover:blur-sm"-->
-<!--                                                 alt="portfolio">-->
-<!--                                            <div class="absolute inset-0 transition-all duration-300 opacity-0 bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div-->
-<!--                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">-->
-<!--                                        Afriscout-->
-<!--                                        <span>-->
-<!--                                            Design, Development-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">-->
-<!--                                    <li>-->
-<!--                                        <a href="#"-->
-<!--                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">-->
-<!--                                            Branding-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>&lt;!&ndash;./portfolio-card&ndash;&gt;-->
+                            <!-- Regen App Card -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                                <div class="h-56 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                                    <img src="assets/img/Regen.jpeg" 
+                                         alt="Regen Platform" 
+                                         class="max-h-full w-auto p-4">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-black dark:text-white mb-2">Regen Platform</h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        An innovative platform that modernizes pastoral grazing management through planned paddock rotations. By optimizing livestock movement patterns, it helps preserve carbon in grasslands while enabling pastoralists to earn from carbon credits.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">Grazing Management</span>
+                                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 rounded-full text-sm">Carbon Sequestration</span>
+                                        <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 rounded-full text-sm">Pastoral Tech</span>
+                                    </div>
+                                    <a href="https://web.afriscout.org" 
+                                       target="_blank"
+                                       class="inline-flex items-center text-theme hover:text-theme-dark">
+                                        <i class="fas fa-external-link-alt mr-2"></i>
+                                        Visit Platform
+                                    </a>
+                                </div>
+                            </div>
 
-<!--                            <div class="item md:col-span-1 group">-->
-<!--                                <a href="project-single.html"-->
-<!--                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">-->
-<!--                                    <div class="img-wrapper">-->
-<!--                                        <img src="assets/img/portfolio/portfolio-img2.png"-->
-<!--                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"-->
-<!--                                            alt="portfolio">-->
-<!--                                        <div-->
-<!--                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div-->
-<!--                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">-->
-<!--                                        Design-->
-<!--                                        <span>-->
-<!--                                            Specialization-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">-->
-<!--                                    <li>-->
-<!--                                        <a href="#"-->
-<!--                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">-->
-<!--                                            Branding-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>&lt;!&ndash;./portfolio-card&ndash;&gt;-->
+                            <!-- MediaPal Card -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                                <div class="h-56 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                                    <img src="assets/img/Mediapal.png" 
+                                         alt="MediaPal Platform" 
+                                         class="max-h-full w-auto p-4">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-black dark:text-white mb-2">MediaPal</h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        An integrated omni-channel programmatic advertising platform built for performance. Developed at Mobiglobe, enabling data-driven marketing and audience targeting.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-100 rounded-full text-sm">AdTech</span>
+                                        <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-100 rounded-full text-sm">Programmatic</span>
+                                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-100 rounded-full text-sm">Analytics</span>
+                                    </div>
+                                    <a href="https://www.mediapal.net" 
+                                       target="_blank"
+                                       class="inline-flex items-center text-theme hover:text-theme-dark">
+                                        <i class="fas fa-external-link-alt mr-2"></i>
+                                        Visit Platform
+                                    </a>
+                                </div>
+                            </div>
 
-<!--                            <div class="item md:col-span-1 group">-->
-<!--                                <a href="project-single.html"-->
-<!--                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">-->
-<!--                                    <div class="img-wrapper">-->
-<!--                                        <img src="assets/img/portfolio/portfolio-img3.png"-->
-<!--                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"-->
-<!--                                            alt="portfolio">-->
-<!--                                        <div-->
-<!--                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div-->
-<!--                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">-->
-<!--                                        Design-->
-<!--                                        <span>-->
-<!--                                            Specialization-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">-->
-<!--                                    <li>-->
-<!--                                        <a href="#"-->
-<!--                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">-->
-<!--                                            Branding-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>&lt;!&ndash;./portfolio-card&ndash;&gt;-->
-
-<!--                            <div class="item md:col-span-2 group">-->
-<!--                                <a href="project-single.html"-->
-<!--                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">-->
-<!--                                    <div class="img-wrapper">-->
-<!--                                        <img src="assets/img/portfolio/portfolio-img4.png"-->
-<!--                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"-->
-<!--                                            alt="portfolio">-->
-<!--                                        <div-->
-<!--                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div-->
-<!--                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">-->
-<!--                                        Design-->
-<!--                                        <span>-->
-<!--                                            Specialization-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">-->
-<!--                                    <li>-->
-<!--                                        <a href="#"-->
-<!--                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">-->
-<!--                                            Branding-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>&lt;!&ndash;./portfolio-card&ndash;&gt;-->
-<!--                        </div>-->
-
-
-<!--                        <div class="mt-10 text-center more-blogs md:mt-13">-->
-<!--                            <a href="all-projects.html"-->
-<!--                                class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover">-->
-<!--                                More Projects-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                            <!-- Rifaly Card -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                                <div class="h-56 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                                    <img src="assets/img/Rifaly.webp" 
+                                         alt="Rifaly Platform" 
+                                         class="max-h-full w-auto p-4">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-black dark:text-white mb-2">Rifaly (Mpaper)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        A comprehensive digital content platform that aggregates African newspapers, magazines, books, and audio stories. The platform bridges the gap between content creators, publishers, and consumers across Africa.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">Digital Publishing</span>
+                                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-sm">Content Aggregation</span>
+                                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full text-sm">Mobile Apps</span>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <a href="https://play.google.com/store/apps/details?id=smartcodes.tz.co.myapplication" 
+                                           target="_blank"
+                                           class="inline-flex items-center text-theme hover:text-theme-dark">
+                                            <i class="fab fa-google-play mr-2"></i>
+                                            Play Store
+                                        </a>
+                                        <a href="https://apps.apple.com/us/app/m-paper/id1061068015" 
+                                           target="_blank"
+                                           class="inline-flex items-center text-theme hover:text-theme-dark">
+                                            <i class="fab fa-app-store-ios mr-2"></i>
+                                            App Store
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- Portfolio Section End -->
